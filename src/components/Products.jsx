@@ -26,7 +26,7 @@ const Products = ({ products }) => {
     return () => clearInterval(intervalId);
   }, []);
   return (
-    <div className="my-10">
+    <div className="my-10 relative">
       <div className="flex justify-center items-center gap-10">
         {/* Title */}
         <h1 className="inline-block font-medium text-3xl border-b-2 border-white w-fit my-8">
@@ -61,6 +61,8 @@ const Products = ({ products }) => {
           </div>
         ))}
       </div>
+      {/* overlay when modal is on */}
+      {showModal && <div className="absolute inset-0 bg-black/70 z-50" />}
       {/* Modal on or off */}
       {showModal && (
         <Modal product={selectedProduct} onClose={handleCloseModal} />
