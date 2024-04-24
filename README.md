@@ -21,7 +21,7 @@ Here are the screenshots of the Fudo Website
 ---
 
 **Searched Images**
-![Images](./src/assets/searchedimages.png "Images")
+![Images](./src/assets/searchedImages.png "Images")
 
 ---
 
