@@ -35,7 +35,7 @@ const Products = ({ products }) => {
         {/* Counter */}
         <span className="">{count}</span>
       </div>
-      <div className="grid grid-cols-4 gap-8 px-5">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 px-5">
         {/*  Single Product Card */}
         {products?.map((item) => (
           <div className="relative h-[250px]" key={item.id}>
@@ -50,7 +50,7 @@ const Products = ({ products }) => {
               className="absolute bottom-14 right-1 text-white rounded-full bg-black p-1 cursor-pointer"
               onClick={() => handleIconClick(item)}
             />
-            <div className="h-[20%} bg-slate-600/45 rounded-b-xl py-3 px-1">
+            <div className="h-[20%} bg-slate-600/45 rounded-b-xl py-3 px-1 truncate block">
               <h1 className="text-sm text-white font-medium">
                 User: {item.user}
               </h1>

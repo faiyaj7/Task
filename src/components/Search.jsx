@@ -50,14 +50,14 @@ const Search = () => {
         <div className="absolute top-[50%] left-[50%] -translate-x-[50%]  w-1/2 ">
           <form
             onSubmit={handleSubmit}
-            className="w-full flex items-center justify-center  gap-4"
+            className="w-full flex items-center justify-center flex-col lg:flex-row  gap-4"
           >
             <input
               type="text"
               value={query}
               placeholder="Enter the text here"
               onChange={(e) => setQuery(e.target.value)}
-              className="input input-bordered w-1/2 "
+              className="input input-bordered w-full lg:w-1/2 "
             />
             <button type="submit" className="btn btn-success">
               Submit
